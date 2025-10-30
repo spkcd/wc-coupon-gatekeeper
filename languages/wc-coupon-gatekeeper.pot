@@ -1,0 +1,249 @@
+# Copyright (C) 2024 WC Coupon Gatekeeper
+# This file is distributed under the same license as the WC Coupon Gatekeeper plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Coupon Gatekeeper 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-coupon-gatekeeper\n"
+"POT-Creation-Date: 2024-01-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: wc-coupon-gatekeeper.php
+msgid "<strong>WC Coupon Gatekeeper</strong> requires WooCommerce to be installed and active. Please install %s first."
+msgstr ""
+
+msgid "WC Coupon Gatekeeper requires WooCommerce to be installed and active."
+msgstr ""
+
+msgid "Plugin Activation Error"
+msgstr ""
+
+msgid "This coupon can only be used on the allowed day(s) each month."
+msgstr ""
+
+msgid "You've already used this coupon this month."
+msgstr ""
+
+#: src/Admin/Settings_Screen.php
+msgid "Coupon Gatekeeper"
+msgstr ""
+
+msgid "Are you sure you want to purge old logs? This action cannot be undone."
+msgstr ""
+
+msgid "Purging logs..."
+msgstr ""
+
+msgid "Old logs have been purged successfully."
+msgstr ""
+
+msgid "Failed to purge logs. Please try again."
+msgstr ""
+
+msgid "You do not have permission to manage WooCommerce settings."
+msgstr ""
+
+msgid "You must select at least one allowed day."
+msgstr ""
+
+msgid "Default monthly limit must be at least 1."
+msgstr ""
+
+msgid "Log retention must be at least 1 month."
+msgstr ""
+
+msgid "You must select at least one status to count usage."
+msgstr ""
+
+# Settings: Feature Toggles
+msgid "Feature Toggles"
+msgstr ""
+
+msgid "Enable or disable specific restriction features."
+msgstr ""
+
+msgid "Enable Day-of-Month Restriction"
+msgstr ""
+
+msgid "Restrict coupons to specific days of each month."
+msgstr ""
+
+msgid "Enable Per-Customer Monthly Limit"
+msgstr ""
+
+msgid "Enforce monthly usage limits per customer."
+msgstr ""
+
+# Settings: Coupon Targeting
+msgid "Coupon Targeting"
+msgstr ""
+
+msgid "Select which coupons should be restricted by this plugin."
+msgstr ""
+
+msgid "Restricted Coupons"
+msgstr ""
+
+msgid "Enter coupon codes (comma or line-separated). Example: 27off, vip27, SUMMERSALE"
+msgstr ""
+
+msgid "Coupon codes will be normalized to lowercase."
+msgstr ""
+
+msgid "Apply to ALL Coupons"
+msgstr ""
+
+msgid "When enabled, restrictions apply to every coupon (ignores the list above)."
+msgstr ""
+
+# Settings: Allowed Days
+msgid "Allowed Day(s)"
+msgstr ""
+
+msgid "Configure which days of the month coupons can be used."
+msgstr ""
+
+msgid "Allowed Day(s) of Month"
+msgstr ""
+
+msgid "Select which days coupons can be used (1-31)."
+msgstr ""
+
+msgid "If Day Missing → Use Last Valid Day of Month"
+msgstr ""
+
+msgid "If selected day doesn't exist (e.g., Feb 31), allow usage on the last day of that month."
+msgstr ""
+
+# Settings: Monthly Limit
+msgid "Monthly Limit"
+msgstr ""
+
+msgid "Configure per-customer monthly usage limits and customer identification."
+msgstr ""
+
+msgid "Default Monthly Limit per Customer"
+msgstr ""
+
+msgid "Maximum number of times a customer can use each coupon per month."
+msgstr ""
+
+msgid "Per-Coupon Overrides"
+msgstr ""
+
+msgid "Override limit for specific coupons (one per line). Format: <code>coupon_code:limit</code><br>Example:<br><code>vip27:5</code><br><code>special:10</code>"
+msgstr ""
+
+msgid "Identify Customer By"
+msgstr ""
+
+msgid "How to track customers for usage limits."
+msgstr ""
+
+msgid "Logged-in User ID (preferred), fallback to billing email for guests"
+msgstr ""
+
+msgid "Always use billing email (even for logged-in users)"
+msgstr ""
+
+msgid "Anonymize Email in Logs"
+msgstr ""
+
+msgid "Store email addresses as salted, irreversible hashes for privacy."
+msgstr ""
+
+# Settings: Messages
+msgid "Error Messages"
+msgstr ""
+
+msgid "Customize error messages shown to customers."
+msgstr ""
+
+msgid "Error: Not Allowed Day"
+msgstr ""
+
+msgid "Message shown when coupon is used on a non-allowed day."
+msgstr ""
+
+msgid "Error: Monthly Limit Reached"
+msgstr ""
+
+msgid "Message shown when customer has exceeded monthly usage limit."
+msgstr ""
+
+# Settings: Advanced
+msgid "Advanced Settings"
+msgstr ""
+
+msgid "Advanced configuration options for usage tracking and admin features."
+msgstr ""
+
+msgid "Count Usage On Status"
+msgstr ""
+
+msgid "Order statuses that should increment usage counter."
+msgstr ""
+
+msgid "Decrement On Status"
+msgstr ""
+
+msgid "Order statuses that should decrement usage counter."
+msgstr ""
+
+msgid "Admin Bypass in Edit Order"
+msgstr ""
+
+msgid "Skip validation checks when admin manually adds coupons in WP Admin order edit screen."
+msgstr ""
+
+msgid "Clear Logs Older Than N Months"
+msgstr ""
+
+msgid "Logs older than this many months can be purged."
+msgstr ""
+
+msgid "Purge Old Logs"
+msgstr ""
+
+msgid "Purge Old Logs Now"
+msgstr ""
+
+msgid "This will permanently delete logs older than %d months."
+msgstr ""
+
+msgid "Delete Data on Uninstall"
+msgstr ""
+
+msgid "Remove all plugin data (settings and logs) when the plugin is uninstalled."
+msgstr ""
+
+msgid "Insufficient permissions."
+msgstr ""
+
+msgid "Database error while purging logs."
+msgstr ""
+
+msgid "Successfully deleted %d log record."
+msgid_plural "Successfully deleted %d log records."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Usage_Logs_Screen.php
+msgid "Coupon Usage Logs"
+msgstr ""
+
+msgid "Coupon Logs"
+msgstr ""
+
+msgid "View monthly coupon usage statistics tracked by Coupon Gatekeeper."
+msgstr ""
+
+msgid "You do not have permission to access this page."
+msgstr ""
+
+msgid "Usage logs table will be implemented in the next phase."
+msgstr ""

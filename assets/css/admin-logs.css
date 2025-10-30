@@ -1,0 +1,192 @@
+/**
+ * Admin Logs Screen Styles
+ * WC Coupon Gatekeeper
+ */
+
+/* Tools Section */
+.wcgk-tools-section {
+	margin: 20px 0;
+	padding: 15px;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.wcgk-tools-section .button {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.wcgk-tools-section .dashicons {
+	margin-top: 3px;
+}
+
+/* Table Enhancements */
+.wp-list-table code {
+	font-size: 12px;
+	background: #f0f0f0;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+.wp-list-table .column-count strong {
+	color: #2271b1;
+	font-size: 14px;
+}
+
+.wp-list-table .column-last_order a {
+	text-decoration: none;
+}
+
+.wp-list-table .column-last_order a:hover {
+	text-decoration: underline;
+}
+
+/* Customer History Modal */
+#wcgk-history-modal {
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wcgk-modal-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.wcgk-modal-content {
+	position: relative;
+	margin: 50px auto;
+	width: 90%;
+	max-width: 800px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+.wcgk-modal-close {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #aaa;
+	cursor: pointer;
+	line-height: 1;
+}
+
+.wcgk-modal-close:hover,
+.wcgk-modal-close:focus {
+	color: #000;
+}
+
+#wcgk-history-details {
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #f9f9f9;
+	border-left: 4px solid #2271b1;
+}
+
+#wcgk-history-details p {
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+#wcgk-history-details strong {
+	color: #2271b1;
+}
+
+#wcgk-history-table {
+	margin-top: 20px;
+}
+
+#wcgk-history-table table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+}
+
+#wcgk-history-table th,
+#wcgk-history-table td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+#wcgk-history-table th {
+	background: #f9f9f9;
+	font-weight: 600;
+	color: #23282d;
+}
+
+#wcgk-history-table tr:hover {
+	background: #f9f9f9;
+}
+
+#wcgk-history-table .no-history {
+	text-align: center;
+	padding: 30px;
+	color: #999;
+	font-style: italic;
+}
+
+/* Loading State */
+.wcgk-loading {
+	text-align: center;
+	padding: 20px;
+}
+
+.wcgk-loading::after {
+	content: "...";
+	animation: wcgk-dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes wcgk-dots {
+	0%, 20% {
+		content: ".";
+	}
+	40% {
+		content: "..";
+	}
+	60%, 100% {
+		content: "...";
+	}
+}
+
+/* Filter Section */
+.tablenav .actions input[type="text"],
+.tablenav .actions input[type="number"],
+.tablenav .actions select {
+	margin-right: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.wcgk-modal-content {
+		width: 95%;
+		margin: 20px auto;
+		padding: 20px;
+	}
+
+	.wcgk-tools-section .button {
+		display: block;
+		margin: 5px 0;
+		width: 100%;
+	}
+
+	.tablenav .actions input,
+	.tablenav .actions select {
+		width: 100%;
+		margin: 5px 0;
+	}
+}
